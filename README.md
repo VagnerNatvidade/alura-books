@@ -1,5 +1,3 @@
-# Imagem
-
 ![capa do readme](./assets/images/nativ.png)
 
 <h1 style="text-align: center">Alura Books</h1>
