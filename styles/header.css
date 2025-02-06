@@ -1,0 +1,179 @@
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  background-color: var(--light-100);
+}
+
+header h1,
+header nav,
+header div:nth-child(2) > a span {
+  display: none;
+}
+
+header > div {
+  height: 100%;
+}
+
+header > div,
+header > div:first-child div {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#menu ~ label {
+  width: 8rem;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+  transition: 0.2s ease;
+}
+
+#menu ~ label:hover,
+.menuList li:hover,
+#menu:checked + #menu ~ label {
+  cursor: pointer;
+  color: var(--light-100);
+  background: var(--gradient-color);
+}
+
+.menuList li:hover > a {
+  color: var(--light-100);
+}
+
+#menu ~ label:hover,
+.menuList li:hover,
+#menu:checked + #menu ~ label,
+.menuList li:hover > a {
+  transition: 0.2s ease;
+}
+
+#menu {
+  display: none;
+}
+
+.menuList {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  display: none;
+  width: 60vw;
+  list-style: none;
+  background: var(--light-100);
+}
+
+.menuList a {
+  font-size: 1.6rem;
+}
+
+.menuList li {
+  padding: 2.4rem;
+}
+
+.menuList p {
+  color: var(--pri-color);
+  font-weight: bold;
+}
+
+#menu:checked ~ .menuList {
+  display: block;
+}
+
+header a {
+  color: var(--dark-color);
+  padding: 1.6rem;
+}
+
+header a,
+header i {
+  font-size: 3.2rem;
+}
+
+/* min-width quando for mibile-first e max-width quando for desktop-first */
+@media screen and (min-width: 1024px) {
+  #menu ~ label,
+  #menu:checked ~ .menuList,
+  header .container-fa-heart {
+    display: none;
+  }
+
+  header .fa-heart:hover {
+    cursor: default;
+  }
+
+  header h1,
+  header nav {
+    display: initial;
+  }
+
+  header {
+    padding: 0 5%;
+  }
+
+  header h1 {
+    font-size: 3.2rem;
+    margin-left: 1.2rem;
+  }
+
+  header h1 span {
+    font-weight: 400;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  #nav-menu ~ label {
+    padding: 1.6rem;
+    transition: 0.2s ease;
+  }
+
+  #nav-menu:checked ~ .menuList {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+  }
+
+  .menuList {
+    width: max-content;
+    top: 10 0%;
+  }
+
+  header a {
+    font-size: 1.6rem;
+    transition: 0.2s ease;
+  }
+
+  header i {
+    font-size: 2.4rem;
+  }
+
+  header nav a:hover,
+  #nav-menu ~ label:hover {
+    color: var(--light-200);
+    background: var(--gradient-color);
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  header div:nth-child(2) {
+    flex: 1;
+  }
+
+  header nav {
+    margin: 0 auto 0 6rem;
+  }
+
+  header div:nth-child(2) > a span {
+    display: initial;
+    margin-left: 0.8rem;
+    font-size: 2rem;
+  }
+}

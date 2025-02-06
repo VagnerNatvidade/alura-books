@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("./styles/header.css");
+@import url("./styles/main.css");
+@import url("./styles/footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --pri-font: "Poppins", serif;
+  --sec-font: "Josefin Sans", serif;
+
+  --light-100: #fff;
+  --light-200: #ebecee;
+  --dark-color: #002f52;
+  --pri-color: #eb9b00;
+  --footer-tt: #474646;
+  --gradient-color: linear-gradient(95deg, #002f52 35%, #326589 160%);
+}
+
+body {
+  font-family: var(--pri-font);
+  font-size: 1.6rem;
+  color: var(--dark-color);
+  background-color: var(--light-200);
+}
+
+body a {
+  text-decoration: none;
+}

@@ -1,0 +1,316 @@
+main h2 {
+  font-size: 1.8rem;
+}
+
+.input {
+  width: 100%;
+  padding: 3.2rem 5%;
+  text-align: center;
+  color: var(--light-200);
+  background: var(--gradient-color);
+}
+
+.input > p {
+  padding: 0.8rem 2.4rem 2.4rem;
+}
+
+.input div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.2rem;
+  border: 0.2rem solid var(--light-200);
+  border-radius: 10rem;
+  font-size: 1.4rem;
+  background: transparent;
+}
+
+.input input {
+  width: 100%;
+  margin-left: 1.2rem;
+  border: none;
+  outline: none;
+  color: var(--light-200);
+  background: transparent;
+}
+
+input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.input input::placeholder {
+  font-size: 1.4rem;
+  color: var(--light-200);
+}
+
+.books > h2 {
+  margin-bottom: 2.4rem;
+  padding: 1.5rem 5%;
+  text-align: center;
+  color: var(--pri-color);
+  background-color: var(--light-100);
+}
+
+.swiper {
+  padding: 1.6rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-wrapper div {
+  box-shadow: 0 0.4rem 0.4rem #a0a0a0;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.card {
+  gap: 1.6rem;
+  margin: 2.4rem 5%;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  /* eixo-x eixo-y blur color */
+  box-shadow: 0 0.4rem 0.4rem #a0a0a0;
+  background: var(--light-100);
+}
+
+.card > div {
+  display: flex;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.description,
+.card-icons {
+  flex: 1;
+}
+
+.book .description p:first-child,
+.author .description p:nth-child(2) {
+  font-weight: bold;
+  color: var(--pri-color);
+}
+
+.rating {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.rating i {
+  font-size: 1.2rem;
+  color: var(--pri-color);
+}
+
+.description h2 {
+  margin: 0.8rem 0;
+}
+
+.card img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.card > div:nth-child(2) {
+  margin-top: 2.4rem;
+}
+
+.card-icons i {
+  padding: 1.6rem;
+  font-size: 3.2rem;
+}
+
+.card a {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  color: var(--light-200);
+  background-color: var(--pri-color);
+}
+
+.visited {
+  width: 100%;
+  padding: 3.2rem 5%;
+  text-align: center;
+  color: var(--light-200);
+  background: var(--gradient-color);
+}
+
+.visited h2 {
+  font-weight: 300;
+}
+
+.visited ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.visited li {
+  padding: 1.6rem 2.4rem;
+  background-color: var(--pri-color);
+}
+
+.visited a {
+  font-weight: bold;
+  color: var(--light-200);
+}
+
+.email {
+  text-align: left;
+  color: var(--dark-color);
+  background: var(--light-100);
+}
+
+.email h2 {
+  font-weight: 600;
+}
+
+.email p {
+  padding: 0.8rem 0 2.4rem;
+}
+
+.email div {
+  border: 0.2rem solid var(--dark-color);
+}
+
+.email > div:first-child {
+  flex-direction: column;
+  border: none;
+  border-radius: 0;
+}
+
+.email input {
+  color: var(--dark-color);
+  background: var(--dark-color) text;
+}
+.email input::placeholder {
+  color: var(--dark-color);
+}
+
+@media screen and (min-width: 1024px) {
+  main h2 {
+    font-size: 2.8rem;
+  }
+
+  .search,
+  .card p,
+  .card a {
+    font-size: 1.6rem;
+  }
+
+  .search h2 {
+    font-size: 3.6rem;
+  }
+
+  .search div {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .swiper {
+    width: 80%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    top: 45%;
+    width: 5em;
+    height: 8rem;
+    align-content: center;
+    text-align: center;
+    border-radius: 50rem;
+    color: var(--light-100);
+    background-color: var(--dark-color);
+  }
+
+  .card {
+    width: 60%;
+    margin: 2.4rem auto;
+  }
+
+  .card > div {
+    gap: 5.6rem;
+  }
+
+  .card h2 {
+    font-size: 1.8rem;
+  }
+
+  .card img,
+  .card a {
+    width: 30%;
+  }
+
+  .card > div:nth-child(2) {
+    margin-top: 0.8rem;
+  }
+
+  .visited a {
+    font-size: 2.4rem;
+  }
+
+  .email {
+    display: flex;
+    align-items: center;
+    gap: 5.6rem;
+  }
+
+  .email p {
+    font-size: 1.8rem;
+  }
+
+  .email > div:first-child {
+    align-items: start;
+  }
+
+  .email div:nth-child(2) {
+    height: max-content;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .books > div {
+    display: flex;
+    align-items: center;
+    padding: 8rem 10%;
+    gap: 6rem;
+  }
+
+  .swiper {
+    width: 60%;
+  }
+
+  .card {
+    width: 60%;
+    height: 100%;
+  }
+
+  .card p:first-child,
+  .card p:nth-child(2) {
+    font-size: 3.2rem;
+  }
+
+  .visited {
+    padding: 2.4rem 30%;
+  }
+
+  .email {
+    padding: 2.4rem 20%;
+    gap: 1.6rem;
+  }
+}

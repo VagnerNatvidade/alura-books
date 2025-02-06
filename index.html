@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Books</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="menuList">
+          <li><p>Categorias</p></li>
+          <li><a href="#">PROGRAMAÇÃO</a></li>
+          <li><a href="#">FRONT-END</a></li>
+          <li><a href="#">INFRAESTRUTURA</a></li>
+          <li><a href="#">BUSINESS</a></li>
+          <li><a href="#">DESIGN & UX</a></li>
+        </ul>
+        <div>
+          <img src="./assets/logo_alura_books.svg" alt="logo alura books" />
+          <h1>Alura<span>Books</span></h1>
+        </div>
+      </div>
+      <div>
+        <nav>
+          <input type="checkbox" id="nav-menu" />
+          <label for="nav-menu">
+            <p>CATEGORIA</p>
+          </label>
+          <ul class="menuList">
+            <li><a href="#">PROGRAMAÇÃO</a></li>
+            <li><a href="#">FRONT-END</a></li>
+            <li><a href="#">INFRAESTRUTURA</a></li>
+            <li><a href="#">BUSINESS</a></li>
+            <li><a href="#">DESIGN & UX</a></li>
+          </ul>
+          <a href="#">FAVORITOS</a>
+          <a href="#">MINHA ESTANTE</a>
+        </nav>
+        <a href="#" class="container-fa-heart">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Minha sacola</span>
+        </a>
+        <a href="#">
+          <i class="fa-regular fa-circle-user"></i>
+          <span>Meu perfil</span>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="input search">
+        <h2>Já sabe por onde começas?</h2>
+        <p>Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <div>
+          <label for="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Qual será sua próxima leitura?"
+          />
+        </div>
+      </section>
+      <section class="books newest">
+        <h2>ÚLTIMOS LANÇAMENTOS</h2>
+        <div>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Acessibilidade.png"
+                  alt="imagem do livro de Acessibilidade"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Angular.png"
+                  alt="imagem do livro de Angular"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/ApacheKafka.png"
+                  alt="imagem do livro de ApacheKafka"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Arquitetura.png"
+                  alt="imagem do livro de Arquitetura"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Construct2.png"
+                  alt="imagem do livro de Construct2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Gestão.png"
+                  alt="imagem do livro de Gestão "
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Gestão2.png"
+                  alt="imagem do livro de Gestão2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Guia_Front_end.png"
+                  alt="imagem do livro de Guia Front end"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Javascript.png"
+                  alt="imagem do livro de Javascript"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Liderança.png"
+                  alt="imagem do livro de Liderança"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/MEAN.png"
+                  alt="imagem do livro de MEAN"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/MetricasAgeis.png"
+                  alt="imagem do livro de MetricasAgeis"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Nodejs.png"
+                  alt="imagem do livro de Nodejs"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Portugol.png"
+                  alt="imagem do livro de Portugol"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/ReactNative.png"
+                  alt="imagem do livro de ReactNative"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Tuning.png"
+                  alt="imagem do livro de Tuning"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/UX.png"
+                  alt="imagem do livro de Tuning"
+                />
+              </div>
+              ...
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="card book">
+            <div>
+              <div class="description">
+                <p>Talvez você também se interesse por...</p>
+                <h2>Angular 11 e Firebase</h2>
+                <p>
+                  Construindo uma aplicação integrada com a plataforma do
+                  Google.
+                </p>
+              </div>
+              <img
+                src="./assets/images/books/Mask_group.png"
+                alt="imagem do livro angula 11 e firebase"
+              />
+            </div>
+            <div>
+              <div class="card-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+              <a href="#">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="books best-seller">
+        <h2>MAIS VENDIDOS</h2>
+        <div>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Acessibilidade.png"
+                  alt="imagem do livro de Acessibilidade"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Angular.png"
+                  alt="imagem do livro de Angular"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/ApacheKafka.png"
+                  alt="imagem do livro de ApacheKafka"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Arquitetura.png"
+                  alt="imagem do livro de Arquitetura"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/books/Construct2.png"
+                  alt="imagem do livro de Construct2"
+                />
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="card author">
+            <div>
+              <div class="description">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Autora do Mês</p>
+                <h2>Juliana Agarikov</h2>
+                <p>
+                  Analista de sistemas e escritora, Juliana é especialista em
+                  Front-End.
+                </p>
+              </div>
+              <img
+                src="https://img.freepik.com/fotos-gratis/mulher-loira-otimista-com-lindos-olhos-azuis-posando-durante-o-descanso-no-cafe-no-fim-de-semana_197531-3323.jpg"
+                alt="imagem do author destaque"
+              />
+            </div>
+            <div>
+              <div class="card-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+              <a href="#">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="visited">
+        <h2>TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul>
+          <li><a href="#"> Android </a></li>
+          <li><a href="#"> Marketing Digital </a></li>
+          <li><a href="#"> Agile </a></li>
+          <li><a href="#"> Startups </a></li>
+          <li><a href="#"> HTML & CSS </a></li>
+          <li><a href="#"> Python </a></li>
+          <li><a href="#"> OO </a></li>
+          <li><a href="#"> Java </a></li>
+        </ul>
+      </section>
+      <section class="input email">
+        <div>
+          <h2>Fique por dentro das novidades!</h2>
+          <p>Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <div>
+          <label for="search">
+            <i class="fa-regular fa-envelope"></i>
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Cadastre seu e-mail..."
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Grupo Alura</p>
+      <nav>
+        <ul class="education">
+          <li><p>EDUCAÇÃO</p></li>
+          <li>
+            <img
+              src="./assets/images/comunity/Caelum.png"
+              alt="imagem da parte de ensiso de Caelum"
+            /><a href="#">Caelum</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/CasaDoCodigo.png"
+              alt="imagem da parte de ensiso da casa do código"
+            /><a href="#">Casa do Código</a>
+          </li>
+        </ul>
+        <ul class="on-line">
+          <li><p>EDUCAÇÃO ONLINE</p></li>
+          <li>
+            <img
+              src="./assets/images/comunity/Alura.png"
+              alt="imagem da parte de ensiso da alura"
+            /><a href="#">Alura</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/AluraEmpresas.png"
+              alt="imagem da parte de ensiso da alura empresas"
+            /><a href="#">Alura Para Empresas</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/AluraLatam.png"
+              alt="imagem da parte de ensiso da alura latam"
+            /><a href="#">Alura LATAM</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/AluraStart.png"
+              alt="imagem da parte de ensiso da alura start"
+            /><a href="#">Alura Star</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/MusicDot.png"
+              alt="imagem da parte de ensiso de music dot"
+            /><a href="#">MusicDot</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/AluraLingua.png"
+              alt="imagem da parte de ensiso de alura língua"
+            /><a href="#">Alura Língua</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/PM3.png"
+              alt="imagem da parte de ensiso de PM3"
+            /><a href="#">PM3</a>
+          </li>
+        </ul>
+        <ul class="comunity">
+          <li><p>COMUNIDADE</p></li>
+          <li>
+            <img
+              src="./assets/images/comunity/HipstersTech.png"
+              alt="imagem da comunidade hispter ponto tech"
+            /><a href="#">Hipsters ponto Tech</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/Scuba.png"
+              alt="imagem da comunidade Scuba"
+            /><a href="#">Scuba Dev</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/Layers.png"
+              alt="imagem da comunidade layers"
+            /><a href="#">Layers ponto Tech</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/LikeABoss.png"
+              alt="imagem da comunidade like a boss"
+            /><a href="#">Like a Boss</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/CarreiraSemFronteira.png"
+              alt="imagem da comunidade Carreira Sem Fronteira"
+            /><a href="#">Carreira sem Fronteira</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/HipstersJobs.png"
+              alt="imagem da comunidade hispter ponto jobs"
+            /><a href="#">Hipsters ponto Jobs</a>
+          </li>
+          <li>
+            <img
+              src="./assets/images/comunity/GUJ.png"
+              alt="imagem da comunidade GUJ"
+            /><a href="#">GUJ</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/ed118fd6fa.js"
+    crossorigin="anonymous"
+  ></script>
+  <script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    });
+  </script>
+</html>
