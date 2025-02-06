@@ -3,7 +3,7 @@ footer nav {
 }
 
 footer {
-  padding: 4frem 5%;
+  padding: 4rem 5%;
   border-top: 0.2rem solid var(--dark-color);
   background: var(--light-100);
 }
